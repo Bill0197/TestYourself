@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import "./stylesheets/App.css"
-import Footer, { Button } from './components/layouts/footer'
+import Footer from './components/layouts/footer'
 import Header from './components/layouts/header'
 
 
@@ -17,10 +17,9 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div className="App Bar" >
-        <Button />
-        <h1> <Header />  </h1>
-        <h1> <Footer />  </h1>
+      <div >
+        <h1>Welcome back</h1>
+        <Footer />
       </div>
     );
   }
