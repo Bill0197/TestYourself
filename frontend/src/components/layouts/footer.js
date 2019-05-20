@@ -10,7 +10,7 @@ const Title = styled.h2`
 `
 const Button = styled.button`
   background: ${props => props.primary ? "palevioletred" : "white"};
-  color: ${props => props.primary ? "white" : "red"};
+  color: ${props => props.primary ? "white" : "black"};
 
   font-size: 1em;
   margin: 1em;
