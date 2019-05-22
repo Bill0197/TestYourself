@@ -21,7 +21,7 @@ const Container = styled.div`
 // four div
 const ContElement = styled.div`
 background: black;
-height: 450px;
+height: 80%;
 color: white;
 justify-content: center;
 display: flex;
@@ -179,7 +179,7 @@ class Footer extends Component {
                     </div>
                     <div className="container3">
                         <br /> <br /> <br /> <br />
-                        <b>Content</b>
+                        <b>Contact</b>
                         <br /> <br />
                         {/* social links */}
                         <SocilaLinkWrapper>
