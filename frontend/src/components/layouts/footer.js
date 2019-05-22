@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import Fade from "react-reveal/Fade"
+
+
 import { AppStoreIos } from 'styled-icons/fa-brands/AppStoreIos'
 import { PlayStore } from 'styled-icons/boxicons-logos/PlayStore'
 
@@ -21,7 +24,7 @@ const Container = styled.div`
 // four div
 const ContElement = styled.div`
 background: black;
-height: 80%;
+height: 100%;
 color: white;
 justify-content: center;
 display: flex;
@@ -149,90 +152,115 @@ class Footer extends Component {
         return (
             <Container className='container'>
                 <ContElement className="element">
-                    <div className="container1">
-                        <img className="logo" src={logo} alt="logo-png" /> <br /> <br />
-                        <section className='txt'>
-                            Test Your Knowladge <br />Change The World
+                    <Fade>
+                        <div className="container1">
+                            <Fade bottom>
+                                <img className="logo" src={logo} alt="logo-png" /> <br /> <br />
+                                <section className='txt'>
+                                    Test Your Knowladge <br />Change The World
                             <br /> <br />
-                            <Download>
-                                <Button > <Apple /><span>Apple Store</span></Button>
-                                <Button> <Play />Google Play </Button>
-                            </Download> <br /> <br /> <br />
+                                    <Download>
+                                        <Button > <Apple /><span>Apple Store</span></Button>
+                                        <Button> <Play />Google Play </Button>
+                                    </Download> <br /> <br /> <br />
 
-                            <a style={{ color: "#f6db90" }} href="mailto:sardor.sejong@gmail.com">sardor.sejong@gmail.com</a>
+                                    <a style={{ color: "#f6db90" }} href="mailto:sardor.sejong@gmail.com">sardor.sejong@gmail.com</a>
 
-                        </section>
-                    </div>
-                    <div className="container2">
-                        <br /> <br /> <br /> <br />
-                        Uzbekistan(TASH) <br />
-                        Hayat Regency Road <br />
-                        Tashkent 160900 <br /> <br />
-                        +8210 8427 4044
-                        <br /><br />
-                        TestYourself. <br />
-                        Seoul, South Korea. <br />
-                        Sejong University <br />
-                        DataBase blow mind <br />
-                        Web Programming classes <br />
+                                </section>
+                            </Fade>
+                        </div>
+                        <div className="container2">
+                            <Fade bottom>
+                                <br /> <br /> <br /> <br />
+                                <Fade bottom> <span>  Uzbekistan(TASH) </span>
+                                    <span>  Hayat Regency Road <br /></span>
+                                    <span>Tashkent 160900 <br /> </span><br /> <br />
+                                    <span>+8210 8427 4044</span>
+                                    <br /><br />
+                                    <span> TestYourself. </span><br />
+                                    <span> Seoul, South Korea. </span><br />
+                                    <span>  Sejong University </span><br />
+                                    <span> DataBase blow mind </span><br />
+                                    <span>  Web Programming classes </span><br /> </Fade>
+                            </Fade>
+                        </div>
+                        <div className="container3">
+                            <Fade bottom>
+                                <br /> <br /> <br /> <br />
+                                <b>Contact</b>
+                                <br /> <br />
+                                {/* social links */}
+                                < SocilaLinkWrapper>
+                                    <Fade>
+                                        {/* Facebook */}
+                                        <Fade bottom>
+                                            <div style={{ display: "flex" }}>
+                                                <br /> <Fb className="socialLink" />
+                                                <span> <a href="http://facebook.com/profile.php?id=100004454506696"> Facebook </a></span>
+                                            </div>
+                                        </Fade>
+                                        <Fade bottom>
+                                            {/* Telegram */}
+                                            <div style={{ display: "flex" }}>
+                                                <br />  <Tg className="socialLink" />
+                                                <span> <a href="http://t.me/smd_94">Telegram</a> </span>
+                                            </div>
+                                        </Fade>
+                                        {/* GitHub */}
+                                        <Fade bottom>
+                                            <div style={{ display: "flex" }}>
+                                                <br />   <Git className="socialLink" />
+                                                <span><a href="https://github.com/mukhtorov"> GitHub </a></span>
+                                            </div>
+                                        </Fade>
 
-                    </div>
-                    <div className="container3">
-                        <br /> <br /> <br /> <br />
-                        <b>Contact</b>
-                        <br /> <br />
-                        {/* social links */}
-                        <SocilaLinkWrapper>
-                            {/* Facebook */}
-                            <div style={{ display: "flex" }}>
-                                <br /> <Fb className="socialLink" />
-                                <span> <a href="http://facebook.com/profile.php?id=100004454506696"> Facebook </a></span>
-                            </div>
-                            {/* Telegram */}
-                            <div style={{ display: "flex" }}>
-                                <br />  <Tg className="socialLink" />
-                                <span> <a href="http://t.me/smd_94">Telegram</a> </span>
-                            </div>
-                            {/* GitHub */}
-                            <div style={{ display: "flex" }}>
-                                <br />   <Git className="socialLink" />
-                                <span><a href="https://github.com/mukhtorov"> GitHub </a></span>
-                            </div>
+                                        {/* Twitter */}
+                                        <Fade bottom>
+                                            <div style={{ display: "flex" }}>
+                                                <br />  <Tw className="socialLink" />
+                                                <span > <a href="http://twitte.com/smd_94">Twitter </a></span>
+                                            </div>
+                                        </Fade>
 
-                            {/* Twitter */}
-                            <div style={{ display: "flex" }}>
-                                <br />  <Tw className="socialLink" />
-                                <span > <a href="http://twitte.com/smd_94">Twitter </a></span>
-                            </div>
+                                        {/* youtube */}
+                                        <Fade bottom>
+                                            <div style={{ display: "flex" }}>
+                                                <br />   <Yt className="socialLink" />
+                                                <span><a href="https://www.youtube.com/channel/UCIIcraLARkWo9wc5c699vzA?view_as=subscriber"> Youtube </a></span>
+                                            </div>
+                                            {/* Linkedin */}
+                                        </Fade>
+                                        <Fade bottom>
+                                            <div style={{ display: "flex" }}>
+                                                <br />   <In className="socialLink" />
+                                                <span><a href="http://linkedin.com/in/smd94"> Linkedin </a></span>
+                                            </div>
+                                        </Fade>
+                                        {/* Instagram */}
+                                        <Fade bottom>
+                                            <div style={{ display: "flex" }}>
+                                                <br />  <Ig className="socialLink" />
+                                                <span> <a href="http://instagram.com/smd_94"> Instagram </a></span>
+                                            </div>
+                                        </Fade >
+                                    </Fade>
+                                </SocilaLinkWrapper>
+                            </Fade>
+                        </div>
+                        <div className="container4">
 
-                            {/* youtube */}
-                            <div style={{ display: "flex" }}>
-                                <br />   <Yt className="socialLink" />
-                                <span><a href="https://www.youtube.com/channel/UCIIcraLARkWo9wc5c699vzA?view_as=subscriber"> Youtube </a></span>
-                            </div>
-                            {/* Linkedin */}
-                            <div style={{ display: "flex" }}>
-                                <br />   <In className="socialLink" />
-                                <span><a href="http://linkedin.com/in/smd94"> Linkedin </a></span>
-                            </div>
-                            {/* Instagram */}
-                            <div style={{ display: "flex" }}>
-                                <br />  <Ig className="socialLink" />
-                                <span> <a href="http://instagram.com/smd_94"> Instagram </a></span>
-                            </div>
-                        </SocilaLinkWrapper>
-                    </div>
-                    <div className="container4">
-                        <br /> <br /> <br /> <br />
-                        <b>want to know more?</b>
-                        <br /> <br /> <br /> <br />
+                            <br /> <br /> <br /> <br />
+                            <Fade bottom> <b>want to know more?</b>
+                                <br /> <br /> <br /> <br />
 
-                        <span>
-                            Create Your Future <br />
-                            Your future is on your hand <br />
-                            We are the solution!
-                        </span>
-                    </div>
+                                <Fade button> <span>
+                                    Create Your Future <br />
+                                    Your future is on your hand <br />
+                                    We are the solution!
+                        </span> </Fade>
+                            </Fade>
+                        </div>
+                    </Fade>
                 </ContElement>
             </Container>
 
