@@ -8,21 +8,17 @@
 }
 
 
-@media all and (max-width: 670px){
+@media all and (max-width: 900px){
     .element{
         flex-wrap: wrap;
-
     }
     .element > li {
         flex: 1 1 50%;
-        padding: 0px
     }
 }
 
 @media all and (max-width: 480px){
-
     .element > li {
-        flex: 1 1 100%;
-        padding:3px;
+        flex: 1 1 50%;
     }
 }

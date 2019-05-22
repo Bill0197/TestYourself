@@ -5,7 +5,6 @@ import Fade from "react-reveal/Fade"
 
 import { AppStoreIos } from 'styled-icons/fa-brands/AppStoreIos'
 import { PlayStore } from 'styled-icons/boxicons-logos/PlayStore'
-
 import { Facebook } from 'styled-icons/fa-brands/Facebook'
 import { Github } from "styled-icons/fa-brands/Github"
 import { Twitter } from 'styled-icons/fa-brands/Twitter'
@@ -21,10 +20,13 @@ const Container = styled.div`
 
 `
 
-// four div
+// four div 
+///main
 const ContElement = styled.div`
+align-items: flex-end;
 background: black;
-height: 100%;
+/* height: 100%; */
+/* width: 100%; */
 color: white;
 justify-content: center;
 display: flex;
@@ -187,7 +189,7 @@ class Footer extends Component {
                         <div className="container3">
                             <Fade bottom>
                                 <br /> <br /> <br /> <br />
-                                <b>Contact</b>
+                                <b><Fade bottom>Contact</Fade></b>
                                 <br /> <br />
                                 {/* social links */}
                                 < SocilaLinkWrapper>

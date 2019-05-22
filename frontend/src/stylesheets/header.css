@@ -1,0 +1,35 @@
+.container{
+    background-image: url('../images/main-body.png');   
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: -10;
+}
+.phoneIcon{
+    height: 80vh;
+    padding-right: 40px;
+}
+
+
+@media all and (max-width: 900px){
+    .phoneIcon{
+        height: 60vh;
+    }
+    .content{
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 700px){
+    .phoneIcon{
+        height: 45vh;
+        padding: 0px;
+    }
+    .container > .content{
+        padding: 5px;
+        font-size: 10px;
+    }
+}
