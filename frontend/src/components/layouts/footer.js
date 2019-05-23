@@ -32,6 +32,7 @@ color: white;
 justify-content: center;
 display: flex;
 justify-content: space-around;
+padding-bottom: 80px;
 
 
 .txt{
@@ -94,7 +95,7 @@ color: #f6db90;
 margin-right: 5px;
 height: 20px;
 width: 30px;
-padding: 5px;
+/* padding: 5px; */
 
 `
 

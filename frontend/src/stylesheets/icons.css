@@ -1,6 +1,31 @@
 .IconIcons {
-    border: 2px ;
-    height: 30vh;
-    vertical-align: top;
-    border-radius: 5px;
+    height: 20vh;
+    width: 20vh;
+    border: 3px solid #f6db90;
+    margin: 30px;
+    border-radius: 50%;
+    
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+
+@media all and (max-width: 900px){
+    .iconContainer{
+        /* display: flex; */
+        justify-content: wrap;
+        padding: 0;
+    }
+    .IconIcons {
+        margin: 30px;
+        height: 13vh;
+        width: 13vh;
+        margin: 0px;        
+    }
+    
 }

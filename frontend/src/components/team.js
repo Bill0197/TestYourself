@@ -8,6 +8,7 @@ background-color: #555;
 height: 100%;
 color: white;
 justify-items: center;
+padding-top: 30px;
 .containerTeam{
     align-items: center;
     align-content: center;
