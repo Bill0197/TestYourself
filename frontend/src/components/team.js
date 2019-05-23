@@ -13,16 +13,36 @@ justify-items: center;
     align-content: center;
     justify-content:center;
     text-align: center;
+    font-family: 'Arial Narrow Bold';
     
     
 }
 .Teamcontainer1 {
-    padding: 50px;
-    margin: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.Teamcontainer2{
+    .row1{
+        /* flex: 1; */
+        display: flex;
+        justify-content: space-around;
+        p{
+            color: #9BA7B0;
+            font-size: .87em;
+        }
+    }
 }
  `;
+
 ///image of team members
 const sardor = require('../images/sardor.jpg');
+const dilshod = require('../images/dilshod.png')
+
+
+
+
 
 class Team extends Component {
     render() {
@@ -30,23 +50,48 @@ class Team extends Component {
             <MainTeam>
                 <div className="containerTeam">
                     <div className="Teamcontainer1">
-                        <h1>TEAM MEMBERS</h1>
-                        <p>After more than 4 years experience in web developing and  education,
-                            our team invested in TestYourself technology since its inception
+                        <Fade bottom>
+                            <h1>TEAM MEMBERS</h1>
+                            <p>After more than 4 years experience in web developing and  education,
+                                our team invested in TestYourself technology since its inception
                        </p>
-                        <p>
-                            After pursuing years of experience in the web developing and education
-                            field, we founded TestYourself make millions of people confident for their
-                            advanced education.
+                            <p>
+                                After pursuing years of experience in the web developing and education
+                                field, we founded TestYourself make millions of people confident for their
+                                advanced education.
                        </p>
+                        </Fade>
                     </div>
                     <div className="Teamcontainer2">
                         <div className="row1">
-                            <img src={sardor} alt="sardor" />
-                            <img src={sardor} alt="sardor" />
-                        </div>
-                        <div className="row2">
-                            <h1>row2</h1>
+                            <div>
+                                <Fade bottom>
+                                    <img className='sardor' src={sardor} alt="sardor" />
+                                    <h2 style={{ color: "#f6db90" }} >Sardorbek Mukhtorov</h2>
+                                    <h3>Co-Founder <span>&</span> CEO</h3>
+                                    <h3>Programmer</h3>
+                                    <p>Computer Science and Engineering BA, The Hacking School in India</p>
+                                    <p>Full-Stack Web Programmer <br /> Chief of TestYourself and UzHackers Coding Bootcamp</p>
+                                    <p>Function/Reactive/Clouding/Web Desin/UI/UX</p>
+                                </Fade>
+                            </div>
+                            {/* <div>
+                                <img className='sardor' src={sardor} alt="sardor" />
+                            </div>
+                            <div>
+                                <img className='dilshod' src={dilshod} alt="dilshod" />
+                            </div> */}
+                            <div>
+                                <Fade bottom>
+                                    <img className='dilshod' src={dilshod} alt="dilshod" />
+                                    <h2 style={{ color: "#f6db90" }} >Dilshodbek Mukhtorov</h2>
+                                    <h3> Co-Founder & Director</h3>
+                                    <h3>Instructor</h3>
+                                    <p>Information security BA, The Security System in Andijan</p>
+                                    <p>Mathimatics and Information securety <br /> Chief of TestYourself system</p>
+                                    <p>Functional/Reactve/Insturctor/Mathimatician</p>
+                                </Fade>
+                            </div>
                         </div>
                     </div>
 
