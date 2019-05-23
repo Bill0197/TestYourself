@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import "./stylesheets/App.css"
 import Footer from './components/layouts/footer'
 import Header from './components/layouts/header'
+import Team from './components/team'
+import ComingSoon from './components/coming-soon'
 
 
 class App extends React.Component {
@@ -19,6 +21,8 @@ class App extends React.Component {
     return (
       <div >
         <Header />
+        <ComingSoon />
+        <Team />
         <Footer />
       </div>
     );

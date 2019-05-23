@@ -10,6 +10,7 @@
 
 @media all and (max-width: 900px){
     .element{
+        background-repeat: no-repeat;
         flex-wrap: wrap;
     }
     .element > li {
@@ -18,7 +19,13 @@
 }
 
 @media all and (max-width: 480px){
+    .element{
+        background-repeat: no-repeat;
+
+    }
     .element > li {
         flex: 1 1 50%;
+        background-repeat: no-repeat;
+
     }
 }

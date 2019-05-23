@@ -25,6 +25,7 @@ const Container = styled.div`
 const ContElement = styled.div`
 align-items: flex-end;
 background: black;
+background-repeat: no-repeat;
 /* height: 100%; */
 /* width: 100%; */
 color: white;
@@ -152,7 +153,7 @@ padding: 5px;
 class Footer extends Component {
     render() {
         return (
-            <Container className='container'>
+            <Container className='containerFooter'>
                 <ContElement className="element">
                     <Fade>
                         <div className="container1">
