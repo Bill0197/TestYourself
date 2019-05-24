@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Fade from 'react-reveal/Fade'
 import '../../stylesheets/header.css'
 import Responsive from 'react-responsive-background';
+import NavBar from '../navbar'
 
 import { AppStoreIos } from 'styled-icons/fa-brands/AppStoreIos'
 import { PlayStore } from 'styled-icons/boxicons-logos/PlayStore'
@@ -70,6 +71,7 @@ class Header extends Component {
     render() {
         return (
             <Main className='container'>
+                {/* <NavBar /> */}
                 <Fade bottom>
                     <div className="container1">
                         <Content>
