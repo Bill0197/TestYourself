@@ -9,6 +9,7 @@ const Icon = styled.div`
     padding-bottom: 30px;
     padding-left: 120px;
     padding-right: 70px;
+    padding-top: 40px;
 `
 
 //icons

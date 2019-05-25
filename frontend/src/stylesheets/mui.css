@@ -1,0 +1,175 @@
+.ContainerM{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-bottom: 0px; 
+    ;
+}
+
+.mtitle2{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+
+.mlogo{
+    width: 70vh;
+    height: 70vh;
+}
+
+ul{
+    color: #f6db90;
+}
+.col1{
+    flex-grow: 3;
+}
+.col2{
+    padding-left: 50px;
+    padding-top:50px;
+}
+.mtitle{
+    justify-content: center;
+    text-align: center;
+}
+
+@media all and (max-width: 1400px){
+    .ContainerM{
+        padding-left: 230px;
+        padding-right: 230px;
+    }
+    .col2{
+        padding-left: 10px;
+    }
+    .mlogo{
+        width: 60vh;
+        height: 60vh;
+    }
+}
+
+
+
+@media all and (max-width: 1200px){
+    .ContainerM{
+        padding-left: 170px;
+        padding-right: 170px;
+    }
+    .col2{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .mlogo{
+        width: 60vh;
+        height: 65vh;
+    }
+}
+
+
+@media all and (max-width: 1100px){
+    .ContainerM{
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    .col2{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .mlogo{
+        width: 60vh;
+        height: 65vh;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .ContainerM{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .col2{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .mlogo{
+        width: 60vh;
+        height: 65vh;
+    }
+}
+
+
+@media all and (max-width: 900px){
+    .ContainerM{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .col2{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .mlogo{
+        width: 60vh;
+        height: 65vh;
+    }
+}
+
+
+@media all and (max-width: 800px){
+    .ContainerM{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .col2{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .mlogo{
+        width: 50vh;
+        height: 65vh;
+    }
+}
+
+
+@media all and (max-width: 700px){
+    .ContainerM{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .col2{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .mlogo{
+        width: 45vh;
+        height: 65vh;
+    }
+}
+
+@media all and (max-width: 600px){
+    .ContainerM{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .col2{
+        padding-left: 5px;
+        padding-top: 10px;
+    }
+    .mlogo{
+        width: 40vh;
+        height: 65vh;
+    }
+}
+
+
+@media all and (max-width: 550px){
+    .ContainerM{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .col2{
+        padding-left: 5px;
+        padding-top: 10px;
+    }
+    .mlogo{
+        width: 30vh;
+        height: 65vh;
+    }
+}

@@ -9,17 +9,17 @@ import Partners from './components/partners'
 import Icons from './components/icons'
 import NavBar from './components/navbar'
 import Register from './components/register'
-import { HashRouter } from 'react-router-dom'
-import { Router, Route, browserHistory } from 'react-router'
-
+import Mui from './components/mui'
+import Why from './components/why'
 // git config --global core.autocrlf false
 class App extends React.Component {
   render() {
     return (
       <div >
-        <NavBar />
+        {/* <NavBar /> */}
         <Header />
         <ComingSoon />
+        <Mui />
         <Icons />
         <Team />
         <Partners />

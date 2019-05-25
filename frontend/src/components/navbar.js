@@ -1,29 +1,44 @@
-import React from 'react';
+import React, { Component } from 'react'
 import styled from 'styled-components'
-import { HashRouter } from 'react-router-dom'
-import { Router, Route } from 'react-router'
+import { Navbar } from 'styled-navbar-component/lib/components/Navbar';
+import { Nav } from 'styled-nav-component'
+import { NavbarLink } from 'styled-navbar-component/lib/components/NavbarLink'
+import { Container } from 'styled-container-component';
+import { Button } from 'styled-button-component';
+import '../stylesheets/navbar.css'
 
-/*
-  if you installed `styled-bootstrap-components` use
- 
-    import { ... } from 'styled-bootstrap-components'
- 
-  instead.
-*/
-// import { Container } from 'styled-container-component';
-// import { Button } from 'styled-button-component';
-import { Navbar, NavbarLink } from 'styled-navbar-component';
-import { Nav } from 'styled-nav-component';
+const NavContainer = styled.nav`
+.NavList{
+    color:#f6db90;
 
-const Button = styled.button`
+}
 `
-const Container = styled.div`
-    position:fixed;
-    position: absolute;
+const Input = styled.input`
+/* display:flex; */
+border: 2px solid #f6db90;
+background: black;
+border-radius: 7px;
+height: 30px;
+color: white;
+align-items:center;
+`
+
+const Btn = styled.button`
+/* display:flex; */
+border: 2px solid #f6db90;
+background: black;
+border-radius: 7px;
+height: 35px;
+width: 100px;
+color: #f6db90;
+align-items:center;
+cursor:pointer;
 `
 
 
-class NavbarLight extends React.Component {
+const brand = require('../images/logo-png.png')
+
+class NavigationBar extends Component {
     constructor(props) {
         super();
         this.state = {
@@ -36,36 +51,50 @@ class NavbarLight extends React.Component {
             hidden: !this.state.hidden,
         });
     }
-
     render() {
         const { hidden } = this.state;
         return (
-            <Container fluid className='fix-nav'>
+            <NavContainer>
                 <Container fluid>
-                    <Navbar expandSm >
-                        <Nav start>
-                            <NavbarLink light brand href="#">BRAND</NavbarLink>
-                            <Button
-                                light
+                    <Navbar clasName='NavCon' expandLg dark>
+                        <Nav >
+                            <NavbarLink dark brand href="#"> <img className='brand' src={brand} alt="brand" /></NavbarLink>
+                            <Button clasName='clb'
+                                dark
                                 outline
                                 toggleCollapse
-                                expandSm
+                                expandLg
                                 onClick={() => this.handleOpenCloseNav()}
                             >
-                                <span>&#9776;</span>
+                                <span>&#9752;</span>
                             </Button>
                         </Nav>
-                        <Nav start collapse expandSm hidden={hidden}>
-                            <HashRouter light active basename="/sardor/">Active</HashRouter>
-                            <NavbarLink light href="#">Link</NavbarLink>
-                            <NavbarLink light href="register">register</NavbarLink>
-                            <NavbarLink light disabled href="#">Disabled</NavbarLink>
+                        <Nav expandLg clasName="NavContent" start collapse expandSm hidden={hidden} >
+                            <div className='list'>
+                                <NavbarLink className="NavList" dark href="#">Contacts</NavbarLink>
+                                <NavbarLink className="NavList" dark href="#">About</NavbarLink>
+                                <NavbarLink className="NavList" dark href="#">TestYourself</NavbarLink>
+                                <NavbarLink className="NavList" dark href="#">News</NavbarLink>
+                                <NavbarLink className="NavList" dark href="#">Coming Soon</NavbarLink>
+                                <NavbarLink className="NavList" dark href="#">Partners</NavbarLink>
+                                <NavbarLink className="NavList" dark href="#">Team</NavbarLink>
+                                <NavbarLink className="NavList" dark href="/register">Register</NavbarLink>
+                            </div>
+
+
+                            <div className='left-item'>
+                                <Input placeholder='search...' type="text" />
+                                <Btn type='button'>Search</Btn>
+                            </div>
                         </Nav>
                     </Navbar>
                 </Container>
-            </Container>
+            </NavContainer>
         );
     }
-};
+}
 
-export default NavbarLight;
+
+
+
+export default NavigationBar;

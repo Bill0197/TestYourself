@@ -1,0 +1,32 @@
+.brand{
+    width: 200px;
+}
+
+.NavList{
+    font-size: 20px;
+    color: #f6db90;
+    /* padding-bottom: 40px; */
+}
+
+.NavContent{
+    justify-content: end;
+    float: left;
+}
+
+.searchbutton{
+    float:right;
+    justify-content: end;
+}
+
+.clb{
+    clear:#f6db90;
+    border: 3px;
+}
+
+.list{
+    display: flex ;
+    
+}
+.left-item{
+    justify-content: flex-end;
+}
