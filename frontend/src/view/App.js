@@ -4,7 +4,7 @@ import Header from '../components/header'
 import Team from '../components/team'
 import ComingSoon from '../components/coming-soon'
 import Partners from '../components/partners'
-// import Icons from './components/icons'
+import Icons from '../components/icons'
 // import NavBar from './components/navbar'
 // import Register from './components/register'
 import Mui from '../components/mui'
@@ -19,7 +19,7 @@ class App extends React.Component {
         <ComingSoon />
         <Mui />
         {/* <Why /> */}
-        {/* <Icons /> */}
+        <Icons />
         <Team />
         <Partners />
         <Footer />

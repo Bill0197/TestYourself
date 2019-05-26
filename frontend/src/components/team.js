@@ -38,7 +38,7 @@ class Team extends Component {
                                 <p>Full-Stack Web Programmer <br /> Chief of TestYourself and UzHackers Coding Bootcamp</p>
                                 <p>Function/Reactive/Clouding/Web Desin/UI/UX</p>
                             </div>
-                            <hr />
+                            <vr />
                             <div>
                                 <img className='dilshod' src={dilshod} alt="dilshod" />
                                 <h2 style={{ color: "#f6db90" }} >Dilshodbek Mukhtorov</h2>
@@ -106,11 +106,18 @@ padding-top: 30px;
     border-radius: 50%;
 }
 
-.Teamcontainer2 > .row1{
     @media all and (max-width: 700px){
+      .Teamcontainer2 > .row1{
     display: block;
     padding: 5px;
+      }
+
+    .Teamcontainer1{
+        padding-right: 5px;
+        padding-left: 5px;
+       margin: 5px;
    }
+
 }
 
 
