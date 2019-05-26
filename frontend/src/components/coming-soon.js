@@ -1,37 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade'
-import '../stylesheets/coming-soon.css'
 
 
-///main
-const Main = styled.div`
-    background-color: #fff;
-    color: #70808d;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    justify-items:center;
-    text-align:center;
-    justify-content: center;
-    font-size: 20px;
 
-    .coming1{
-        text-align:center;
-        justify-content: center;
-
-    }
-
-    .coming2{
-        display: flex;
-        flex: 1;
-        justify-content: space-around;
-        justify-items: center;
-        .comingColumn1 > .comingColumn2 > .comingColumn3{
-            /* flex: 1; */
-            /* padding: 20px; */
-        }
-    }
-`
 ///images
 const logo1 = require('../images/coming1.png');
 const logo2 = require('../images/coming2.png');
@@ -85,5 +57,43 @@ class ComingSoon extends Component {
         );
     }
 }
+
+
+
+///main
+const Main = styled.div`
+    background-color: #fff;
+    color: #70808d;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    justify-items:center;
+    text-align:center;
+    justify-content: center;
+    font-size: 20px;
+
+    .coming1{
+        text-align:center;
+        justify-content: center;
+
+    }
+
+    .coming2{
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        justify-items: center;
+        padding-right: 20px;
+        margin: 40px;
+
+    }
+
+
+    @media all and (max-width: 900px){
+        .coming2{
+            display: block;
+        }
+ 
+}
+`;
 
 export default ComingSoon;

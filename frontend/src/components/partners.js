@@ -1,23 +1,7 @@
 import React, { Component } from 'react'
 import Fade from 'react-reveal/Fade'
 import styled from 'styled-components'
-import '../stylesheets/partners.css'
 
-const MainPartner = styled.div`
-    background-color: #303435;
-    height: 100%;
-    text-align: center;
-    padding-top: 40px;
-    /* display: flex; */
-    color: white;
-`
-
-const Univ = styled.div`
-display: flex;
-justify-content: space-around;
-margin: 100px;
-
-`
 
 
 const kr = require('../images/sejong.gif')
@@ -26,7 +10,7 @@ const uz = require("../images/nampi.png")
 class Partners extends Component {
     render() {
         return (
-            <MainPartner>
+            <MainPartner className="partners">
                 <Fade bottom>
                     <h1>TestYourself Research Partners</h1>
                     <Univ className='univ'>
@@ -52,6 +36,43 @@ class Partners extends Component {
 
 
 
+const MainPartner = styled.div`
+    background-color: #303435;
+    height: 100%;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+
+    .uz{
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+}
+
+.kr{
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+}
+
+.univ{
+    @media all and (max-width: 700px){
+    display: block;
+    padding: 5px;
+   }
+}
+
+
+
+`;
+
+const Univ = styled.div`
+     display: flex;
+     justify-content: center;
+     justify-content: space-around;
+     padding-top: 40px;
+     padding-bottom: 40px;
+`;
 
 
 
