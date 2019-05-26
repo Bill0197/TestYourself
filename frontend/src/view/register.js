@@ -15,7 +15,9 @@ class RegisterPage extends Component {
                             <input placeholder="Second name" type="text" />
                             <input placeholder="example@gmail.com" type="text" />
                             <input placeholder="School name" type="text" />
-                            <input type='submit' value="Submit"/> 
+                            <input placeholder="Enter new password" type="password" />
+                            <input placeholder="Confirm password" type="password" />
+                            <input type='submit' value="Submit" />
                         </div>
                     </form>
                 </div>
