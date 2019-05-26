@@ -177,6 +177,7 @@ padding-bottom: 80px;
     flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
+    padding-top: 50px;
     padding-right:100px;
     padding-left: 100px;
     justify-content: space-around;
