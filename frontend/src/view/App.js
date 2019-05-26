@@ -8,7 +8,7 @@ import Icons from '../components/icons'
 // import NavBar from './components/navbar'
 // import Register from './components/register'
 import Mui from '../components/mui'
-// import Why from './components/why'
+import Why from '../components/why'
 // git config --global core.autocrlf false
 class App extends React.Component {
   render() {
@@ -18,7 +18,7 @@ class App extends React.Component {
         <Header />
         <ComingSoon />
         <Mui />
-        {/* <Why /> */}
+        <Why />
         <Icons />
         <Team />
         <Partners />
