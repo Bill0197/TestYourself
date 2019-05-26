@@ -1,7 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
 import App from './view/App'
-import { HashRouter } from 'react-router-dom'
+import Register from './view/register'
 import { Router, Route, browserHistory } from 'react-router'
 
 class Routing extends React.Component {
@@ -10,6 +9,7 @@ class Routing extends React.Component {
             <div >
                 <Router history={browserHistory}>
                     <Route path={"/"} component={App} />
+                    <Route path={"/register"} component={Register} />
                 </Router>
             </div>
         );
