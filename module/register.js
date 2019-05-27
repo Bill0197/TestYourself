@@ -30,10 +30,6 @@ const registerSchema = new mongoose.Schema({
         type: Number,
         default: "",
         required: true
-    },
-    image: {
-        data: Buffer,
-        contentType: String
     }
 
 });

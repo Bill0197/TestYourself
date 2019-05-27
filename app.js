@@ -6,6 +6,9 @@ var logger = require('morgan');
 var multer = require('multer');
 var app = express();
 const port = 5000;
+const router = express.Router();
+
+
 app.listen(port, function () {
   console.log(`Server is working on${port}`);
 })

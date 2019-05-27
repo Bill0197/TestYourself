@@ -11,14 +11,14 @@ class RegisterPage extends Component {
                 <div className="container">
                     <form className="FormCon" action="">
                         <div className="list">
-                            <input required placeholder="First name" type="text" />
-                            <input src placeholder="Second name" type="text" />
-                            <input placeholder="example@gmail.com" type="email" />
-                            <input placeholder="School name" type="text" />
-                            <input placeholder="Enter new password" type="password" />
+                            <input required placeholder="First name" type="text" name='name' />
+                            <input src placeholder="Second name" type="text" name='surname' />
+                            <input placeholder="example@gmail.com" type="email" name='email' />
+                            <input placeholder="School name" type="text" name='school' />
+                            <input placeholder="Enter new password" type="password" name='password' />
                             <input placeholder="Confirm password" type="password" />
-                            <input className='file' type="file" class="addfiles" title="image" />
-                            <button className="submitbutton" type='submit'> Submit</button>
+                            <input className='file' type="file" class="addfiles" title="picture" name='img' />
+                            <button className="btn" type='submit'> Submit</button>
                         </div>
                     </form>
                 </div>
@@ -69,7 +69,6 @@ const Wrapper = styled.div`
         text-align: center;
         margin-left: 60px;
         color: midnightblue;
-
     }
 
 

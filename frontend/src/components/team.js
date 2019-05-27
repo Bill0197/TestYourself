@@ -95,14 +95,14 @@ padding-top: 30px;
 
 
 .sardor{
-    height: 25vh;
-    width: 25vh;
+    height: 30vh;
+    width: 30vh;
     border-radius: 50%;
 }
 
 .dilshod{
-    height: 25vh;
-    width: 25vh;
+    height: 30vh;
+    width: 30vh;
     border-radius: 50%;
 }
 
