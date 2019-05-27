@@ -11,13 +11,14 @@ class RegisterPage extends Component {
                 <div className="container">
                     <form className="FormCon" action="">
                         <div className="list">
-                            <input placeholder="First name" type="text" />
-                            <input placeholder="Second name" type="text" />
-                            <input placeholder="example@gmail.com" type="text" />
+                            <input required placeholder="First name" type="text" />
+                            <input src placeholder="Second name" type="text" />
+                            <input placeholder="example@gmail.com" type="email" />
                             <input placeholder="School name" type="text" />
                             <input placeholder="Enter new password" type="password" />
                             <input placeholder="Confirm password" type="password" />
-                            <input type='submit' value="Submit" />
+                            <input className='file' type="file" class="addfiles" title="image" />
+                            <button className="submitbutton" type='submit'> Submit</button>
                         </div>
                     </form>
                 </div>
@@ -38,6 +39,7 @@ const Wrapper = styled.div`
     height: 100vh;
     z-index: -10;    
 
+ 
     .list{
         /* display:flex; */
         padding: 100px;
@@ -50,7 +52,27 @@ const Wrapper = styled.div`
         background: papayawhip;
         border: none;
         border-radius: 5px;
+        width: 187px;
+        text-align: center;
+
     }
+
+    
+    button{
+        display: flex;
+        padding: 0.5em;
+        margin: 0.5em;
+        background: papayawhip;
+        border: none;
+        border-radius: 5px;
+        font-size: 17px;
+        text-align: center;
+        margin-left: 60px;
+        color: midnightblue;
+
+    }
+
+
 `
 
 
