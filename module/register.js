@@ -1,35 +1,31 @@
 const mongoose = require('mongoose')
+const Shcema = mongoose.Schema;
 
 const registerSchema = new mongoose.Schema({
     name: {
         String,
         default: "",
-        required: true
     },
     surname: {
         type: String,
         default: "",
-        required: true
     },
     email: {
         type: String,
         default: "",
-        required: true
     },
     school: {
         type: String,
         default: "",
         score: 0,
-        required: true
     },
     date: {
-        type: DataCue,
+        type: Date,
         default: Date.now()
     },
     password: {
         type: Number,
         default: "",
-        required: true
     }
 
 });
