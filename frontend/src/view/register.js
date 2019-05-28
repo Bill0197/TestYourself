@@ -72,23 +72,39 @@ class RegisterPage extends Component {
         console.log(`email:  ${this.state.eml}`)
         console.log(`password${this.state.password}`)
         console.log(`confirmation ${this.state.image}`);
-        this.setState({
-            name: '',
-            surname: '',
-            eml: '',
-            school: '',
-            password: '',
-            image: '',
-            confirm: ''
-        })
+        const user = {
+            name: this.state.name,
+            surname: this.state.surname,
+            eml: this.state.eml,
+            school: this.state.school,
+            img: this.state.img
+        }
+        axios
+            .post("/register", user)
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+        // this.setState({
+        //     name: '',
+        //     surname: '',
+        //     eml: '',
+        //     school: '',
+        //     password: '',
+        //     image: '',
+        //     confirm: ''
+        // })
     }
-    componentDidMount(){
-        fetch('/register')
-        .then(res => res.json())
-        .then(users => this.setState({users}));
-    }
-    
-        render() {
+    // componentDidMount(){
+    //     fetch('/register')
+    //     .then(res => res.json())
+    //     .then(users => this.setState({users}));
+    // }
+
+    render() {
         return (
             <Wrapper>
                 <div className="container">
