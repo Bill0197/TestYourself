@@ -68,7 +68,7 @@ class Footer extends Component {
                                         {/* Facebook */}
                                         <Fade bottom>
                                             <div style={{ display: "flex" }}>
-                                                <br /> <Fb className="socialLink" />
+                                                <br /> <Fb className="socialLink fb" />
                                                 <span> <a href="http://facebook.com/profile.php?id=100004454506696"> Facebook </a></span>
                                             </div>
                                         </Fade>
@@ -124,7 +124,7 @@ class Footer extends Component {
 
                             <br /> <br /> <br /> <br />
                             <Fade bottom> <b>want to know more?</b>
-                                <br /> <br /> <br /> <br />
+                                <br /> <br /> <br /> 
 
                                 <Fade button> <span>
                                     Create Your Future <br />
@@ -159,8 +159,12 @@ justify-content: space-around;
 padding-bottom: 80px;
 
 
+
 .txt{
     font-size: 1.3em;
+}
+.fb{
+    padding-left: 5px;
 }
 
 .element{
@@ -185,7 +189,7 @@ padding-bottom: 80px;
         background-repeat: no-repeat;
         flex-wrap: wrap;
         justify-content: center;
-    justify-items: center;
+        justify-items: center;
     }
 }
 
