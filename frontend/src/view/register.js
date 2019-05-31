@@ -88,21 +88,8 @@ class RegisterPage extends Component {
                 console.log(error);
             });
 
-        // this.setState({
-        //     name: '',
-        //     surname: '',
-        //     eml: '',
-        //     school: '',
-        //     password: '',
-        //     image: '',
-        //     confirm: ''
-        // })
     }
-    // componentDidMount(){
-    //     fetch('/register')
-    //     .then(res => res.json())
-    //     .then(users => this.setState({users}));
-    // }
+
 
     render() {
         return (
@@ -190,7 +177,7 @@ const Wrapper = styled.div`
         left: 50px;
     }
 
-    /* .content-box{
+     .content-box{/*
         color: white;
         width: 100px;
         height: 100px;
@@ -198,7 +185,7 @@ const Wrapper = styled.div`
         left: 50px;
         /* margin: 50px; */
         background-color: white;
-    } */
+    } 
 
 `
 

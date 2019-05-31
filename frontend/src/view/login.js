@@ -12,11 +12,12 @@ class RegisterPage extends Component {
         return (
             <Wrapper>
                 <div className="container">
-                    <div className="con1">
-                        <h1>sardor</h1>
-                    </div>
-                    <div className="con2">
-                        <h2>dilshdo</h2>
+                    <div className="row1">
+
+                        <div className="con1">
+                            <h1>sardor</h1>
+                        </div>
+
                     </div>
                 </div>
             </Wrapper>
@@ -26,30 +27,32 @@ class RegisterPage extends Component {
 
 
 const Wrapper = styled.div`
-    background-image: url(${img});
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -10;    
+        margin: 0px;
+        padding: 0px
+   
     .container{
+        background-image: url(${img});
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        z-index: -10; 
         color: white;
-        display: grid;
         grid-template-columns: 100px ;
         grid-template-rows: 50px;
         grid-gap: 3px;
+    .row{
+
+        /* margin-top: 40px; */
+    }
     }
     .con1{
-        background-color: white;
-        margin: 100px;
+        background: blue;
     }
 
     .con2{
-        background-color: red;
-        margin: 100px;
+        background: blue;
     }
 `;
 
