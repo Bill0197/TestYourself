@@ -124,7 +124,7 @@ class Footer extends Component {
 
                             <br /> <br /> <br /> <br />
                             <Fade bottom> <b>want to know more?</b>
-                                <br /> <br /> <br /> 
+                                <br /> <br /> <br />
 
                                 <Fade button> <span>
                                     Create Your Future <br />
@@ -249,6 +249,7 @@ justify-content: flex-end;
 const Fb = styled(Facebook)`
 color: #f6db90;
 margin-right: 5px;
+margin-bottom: 4px;
 height: 20px;
 width: 30px;
 /* padding: 5px; */
