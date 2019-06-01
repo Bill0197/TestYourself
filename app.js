@@ -24,7 +24,7 @@ mongoose.connect('mongodb://sardor:testing1@ds261616.mlab.com:61616/testinguz', 
   .then(() => console.log('connected'))
 
 
-app.get("/", (req, res) => res.send("Worked"));
+app.get("/", (req, res) => res.send("main page"));
 app.use("/register", registerRoute)
 
 

@@ -8,21 +8,22 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 const img = require('../images/reg3.gif')
 
 class RegisterPage extends Component {
-    constructor(porps) {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             name: '',
             surname: '',
-            eml: '',
+            email: '',
             school: '',
             password: '',
-            image: ''
+            image: '',
+            score: ""
         };
         this.nameChange = this.nameChange.bind(this);
-        this.surnameChange = this.surnameChange.bind(this)
-        this.schoolChange = this.schoolChange.bind(this)
-        this.emailchange = this.emailchange.bind(this)
-        this.passwordChange = this.passwordChange.bind(this)
+        this.surnameChange = this.surnameChange.bind(this);
+        this.schoolChange = this.schoolChange.bind(this);
+        this.emailChange = this.emailChange.bind(this);
+        this.passwordChange = this.passwordChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
     }
 
@@ -39,11 +40,12 @@ class RegisterPage extends Component {
             image: event.target.value
         });
     }
-    emailchange(event) {
+    emailChange(event) {
         this.setState({
-            eml: event.target.value
+            email: event.target.value
         });
     }
+
 
     passwordChange(event) {
         this.setState({
@@ -69,13 +71,13 @@ class RegisterPage extends Component {
         console.log(`name is ${this.state.name}`)
         console.log(`surname is ${this.state.surname}`)
         console.log(`school name is ${this.state.school}`)
-        console.log(`email:  ${this.state.eml}`)
+        console.log(`email:  ${this.state.email}`)
         console.log(`password${this.state.password}`)
         console.log(`confirmation ${this.state.image}`);
         const user = {
             name: this.state.name,
             surname: this.state.surname,
-            eml: this.state.eml,
+            email: this.state.email,
             school: this.state.school,
             img: this.state.img
         }
@@ -100,7 +102,7 @@ class RegisterPage extends Component {
                         <div className="list">
                             <input value={this.state.name} onChange={this.nameChange} placeholder="First name" type="text" name='name' />
                             <input value={this.state.surname} onChange={this.surnameChange} placeholder="Second name" type="text" name='surname' />
-                            <input value={this.state.email} onChange={this.emailChange} placeholder="example@gmail.com" type="email" name='eml' />
+                            <input value={this.state.email} onChange={this.emailChange} placeholder="example@gmail.com" type="email" name='email' />
                             <input value={this.state.school} onChange={this.schoolChange} placeholder="School name" type="text" name='school' />
                             <input value={this.state.password} onChange={this.passwordChange} placeholder="Enter new password" type="password" name='password' />
                             <input name='confirm' placeholder="Confirm password" type="password" />
