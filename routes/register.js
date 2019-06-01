@@ -5,7 +5,7 @@ const user = require('../module/register')
 
 
 //working 
-router.get("/", (req, res) => res.send("working"));
+router.get("/", (req, res) => res.send("post method"));
 
 router.post("/", (req, res) => {
     user.create({
@@ -13,7 +13,7 @@ router.post("/", (req, res) => {
         surname: req.body.surname,
         email: req.body.email,
         school: req.body.school,
-        password: req.body.school,
+        password: req.body.password,
         score: req.body.score
         // img: img.body.img
     }),
@@ -21,7 +21,7 @@ router.post("/", (req, res) => {
             if (err)
                 res.send(err);
             else {
-                res.send('saved');
+                res.redirect('/');
             }
         }
 

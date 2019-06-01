@@ -4,6 +4,7 @@ import axios from 'axios';
 import Create from '../components/create';
 import Edit from '../components/edit';
 import Index from '../components/index';
+import Avatar from 'react-avatar-edit';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 const img = require('../images/reg3.gif')
 
@@ -16,7 +17,7 @@ class RegisterPage extends Component {
             email: '',
             school: '',
             password: '',
-            image: '',
+            file: null,
             score: ""
         };
         this.nameChange = this.nameChange.bind(this);
@@ -24,6 +25,7 @@ class RegisterPage extends Component {
         this.schoolChange = this.schoolChange.bind(this);
         this.emailChange = this.emailChange.bind(this);
         this.passwordChange = this.passwordChange.bind(this);
+        this.imgChange = this.imgChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
     }
 
@@ -35,9 +37,13 @@ class RegisterPage extends Component {
         });
     }
 
-    img(event) {
+    imgChange(event) {
+
+        // let pic = event.target.files[0];
+        console.log(event.target.files[0])
         this.setState({
-            image: event.target.value
+            // file: event.target.files[0]
+
         });
     }
     emailChange(event) {
@@ -73,14 +79,17 @@ class RegisterPage extends Component {
         console.log(`school name is ${this.state.school}`)
         console.log(`email:  ${this.state.email}`)
         console.log(`password${this.state.password}`)
-        console.log(`confirmation ${this.state.image}`);
+        console.log(`img ${this.state.file}`);
+
         const user = {
             name: this.state.name,
             surname: this.state.surname,
             email: this.state.email,
             school: this.state.school,
-            img: this.state.img
+            password: this.state.password,
+            file: this.state.file
         }
+        // user.append('image', this.state.file, this.state.file.name)
         axios
             .post("/register", user)
             .then(function (response) {
@@ -106,7 +115,7 @@ class RegisterPage extends Component {
                             <input value={this.state.school} onChange={this.schoolChange} placeholder="School name" type="text" name='school' />
                             <input value={this.state.password} onChange={this.passwordChange} placeholder="Enter new password" type="password" name='password' />
                             <input name='confirm' placeholder="Confirm password" type="password" />
-                            <input value={this.state.img} onChange={this.imgChange} type="file" name='image' />
+                            <input value={this.state.file} onChange={this.imgChange} type="file" name='file' />
                             <button className="btn" type='submit'> Submit</button>
                         </div>
                     </form>
