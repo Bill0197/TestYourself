@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import axios from 'axios';
-import Create from '../components/create';
-import Edit from '../components/edit';
-import Index from '../components/index';
 import Avatar from 'react-avatar-edit';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 const img = require('../images/reg3.gif')

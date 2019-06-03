@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import SideBar from '../components/sidebar'
-import SideNav from '../components/sidenav'
+import { Router, Route, browserHistory } from 'react-router'
+
+// import SideBar from '../components/sidebar'
+// import SideNav from '../components/sidenav'
 import Team from '../components/team'
+import Allusers from './allusers'
 
 const img = require('../images/reg3.gif')
 
@@ -15,18 +18,18 @@ class Data extends Component {
                         {/* <SideBar /> */}
                         {/* <SideNav /> */}
                         <h1>STAFF</h1> <hr />
-                        <a href="/register/users">All user info</a>
-                        <a href="/register/searchID">Search by ID</a>
-                        <a href="/register/searchName">Search by name</a>
-                        <a href="/register/team">Team members</a>
-                        <a href="#"> Have a issue?</a>
+                        <a href="/data/allusers">All user info</a>
+                        <a href="/data/searchID">Search by ID</a>
+                        <a href="/data/searchName">Search by name</a>
+                        <a href="/data/team">Team members</a>
+                        <a href="data/issue"> Have a issue?</a>
                     </div>
                     <div className="col2">
-                        {/* <Team /> */}
-                        <h1>fasdfa</h1>
-                        <h1>sfdjasdfjal</h1>
-                        <h1>skfjksdfajsdlk</h1>
-
+                        <Team />
+                        <Allusers />
+                        {/* <Router history={browserHistory}>
+                            <Route path={"/data/team"} component={Team} />
+                        </Router> */}
                     </div>
                 </div>
 
@@ -60,7 +63,8 @@ const Main = styled.div`
     .col1{
         background: #f6db90;
         color: black;
-    }{
+        position: -webkit-sticky;
+        position: sticky;
     }
     a{
         /* justify-content: center; */
