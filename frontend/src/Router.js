@@ -4,6 +4,7 @@ import Register from './view/register'
 // import Login from './view/login'
 import Data from './view/data'
 import All from './view/allusers'
+import Test from './components/test'
 import { Router, Route, browserHistory } from 'react-router'
 
 class Routing extends React.Component {
@@ -16,6 +17,7 @@ class Routing extends React.Component {
                     {/* <Route path={"/login"} component={Login} /> */}
                     <Route path={'/data'} component={Data} />
                     <Route path={'/data/allusers'} component={All} />
+                    <Route path={'/test'} component={Test} />
                 </Router>
             </div>
         );

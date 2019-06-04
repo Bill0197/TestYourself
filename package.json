@@ -24,6 +24,7 @@
     "react-avatar-edit": "^0.8.2",
     "react-burger-menu": "^2.6.10",
     "react-sidenav": "^4.0.1",
+    "react-sticky-box": "^0.8.0",
     "styled-components": "^4.2.0",
     "yarn": "^1.16.0"
   },

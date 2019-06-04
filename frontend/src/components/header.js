@@ -20,7 +20,8 @@ class Header extends Component {
                         <div className="container1">
                             <Content>
                                 <h1> Ready to Create Your Futere? </h1>
-                                <h2> Then Test Yourself.</h2>
+                                {/* <h2> Then Test Yourself.</h2> */}
+                                <h1>TestYourSelf</h1>
                                 <h1> UzHacking School</h1>
                             </Content>
                             <Download className='download'>

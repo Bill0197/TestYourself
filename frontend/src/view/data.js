@@ -6,6 +6,7 @@ import { Router, Route, browserHistory } from 'react-router'
 // import SideNav from '../components/sidenav'
 import Team from '../components/team'
 import Allusers from './allusers'
+import Footer from "../components/footer"
 
 const img = require('../images/reg3.gif')
 
@@ -17,7 +18,7 @@ class Data extends Component {
                     <div className="col1">
                         {/* <SideBar /> */}
                         {/* <SideNav /> */}
-                        <h1>STAFF</h1> <hr />
+                        <a href="/data"> <h1>STAFF</h1></a> <hr />
                         <a href="/data/allusers">All user info</a>
                         <a href="/data/searchID">Search by ID</a>
                         <a href="/data/searchName">Search by name</a>
@@ -26,10 +27,8 @@ class Data extends Component {
                     </div>
                     <div className="col2">
                         <Team />
-                        <Allusers />
-                        {/* <Router history={browserHistory}>
-                            <Route path={"/data/team"} component={Team} />
-                        </Router> */}
+                        {/* <Allusers /> */}
+                        {/* <Footer /> */}
                     </div>
                 </div>
 
@@ -49,7 +48,7 @@ const Main = styled.div`
     top: 0;
     bottom: 0;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     z-index: -10;    
     display: flex;
     color: white;
@@ -65,6 +64,7 @@ const Main = styled.div`
         color: black;
         position: -webkit-sticky;
         position: sticky;
+        /* position: fixed; */
     }
     a{
         /* justify-content: center; */

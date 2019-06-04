@@ -6,11 +6,41 @@ const img = require('../images/reg3.gif')
 
 
 const Users = props => (
-    <tr>
-        <td>{props.user.name}</td>
-        <td>{props.user.surname}</td>
-        <td>{props.user.email}</td>
-        <td>{props.user._id}</td>
+    <tr className="userinfo">
+        <div className="avatar">
+            <td className="">image</td>
+        </div>
+        <div className="usercontent1">
+
+            <div className="username">
+                <th>Name:</th>
+                <td>{props.user.name}</td>
+            </div>
+            <div className="usersurname">
+                <th>Surname:</th>
+                <td>{props.user.surname}</td>
+            </div>
+            <div className="userschool">
+                <th>School:</th>
+                <td>{props.user.school}</td>
+            </div>
+        </div>
+        <div className="usercontent2">
+
+            <div className="useremail">
+                <th>Email:</th>
+                <td>{props.user.email}</td>
+            </div>
+            <div className="user">
+                <th>ID:</th>
+                <td>{props.user._id}</td>
+            </div>
+            <div>
+                <th>Score</th>
+                <td>{props.user.score}</td>
+            </div>
+        </div>
+        <br />
     </tr>
 )
 class Allusers extends Component {
@@ -51,9 +81,7 @@ class Allusers extends Component {
 
                 <div className="container">
                     <div className="col1">
-                        {/* <SideBar /> */}
-                        {/* <SideNav /> */}
-                        <h1>STAFF</h1> <hr />
+                        <a href="/data"> <h1>STAFF</h1></a> <hr />
                         <a href="/data/allusers">All user info</a>
                         <a href="/data/searchID">Search by ID</a>
                         <a href="/data/searchName">Search by name</a>
@@ -61,24 +89,13 @@ class Allusers extends Component {
                         <a href="data/issue"> Have a issue?</a>
                     </div>
                     <div className="col2">
-
-
                         <h1>User Information</h1>
                         <table>
-                            <thead>
-
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Surname</th>
-                                    <th>Email</th>
-                                    <th>ID</th>
-                                </tr>
-                            </thead>
                             <tbody>
                                 {this.usersList()}
                             </tbody>
                         </table>
-                </div>
+                    </div>
                 </div>
             </Main>
         );
@@ -89,18 +106,18 @@ const Main = styled.div`
     .col2{
 
     }
-    background-image: url(${img});
+    /* background-image: url(${img}); */
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     top: 0;
     bottom: 0;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     z-index: -10;    
     display: flex;
-    color: white;
-    overflow: hidden;
+    color: black;
+    /* overflow: hidden; */
     .container{
         display: grid;
         text-align: center;
@@ -112,6 +129,8 @@ const Main = styled.div`
         color: black;
         position: -webkit-sticky;
         position: sticky;
+        position: fixed;
+        height: 100vh
     }
     a{
         /* justify-content: center; */
@@ -123,6 +142,17 @@ const Main = styled.div`
         text-align: center;
         display: flex;
         font-family: bold;
+    }
+    .userinfo{
+        display: flex;
+        margin-bottom: 5px;
+        padding-left: 200px;
+
+    }
+    .avatar{
+        width: 70px;
+        height: 90px;
+        border: 2px solid black;
     }
 `
 

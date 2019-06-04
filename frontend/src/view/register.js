@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import axios from 'axios';
 import Avatar from 'react-avatar-edit';
+import { Redirect, browserHistory } from 'react-router'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 const img = require('../images/reg3.gif')
 
@@ -15,7 +16,8 @@ class RegisterPage extends Component {
             school: '',
             password: '',
             file: null,
-            score: ""
+            score: "",
+            redirectToReferrer: false
         };
         this.nameChange = this.nameChange.bind(this);
         this.surnameChange = this.surnameChange.bind(this);
@@ -84,12 +86,14 @@ class RegisterPage extends Component {
             email: this.state.email,
             school: this.state.school,
             password: this.state.password,
-            file: this.state.file
+            file: this.state.file,
+            redirectToReferrer: true
         }
         // user.append('image', this.state.file, this.state.file.name)
         axios
             .post("/register", user)
             .then(function (response) {
+                // response.redirect('/');
                 console.log(response);
             })
             .catch(function (error) {
@@ -115,6 +119,7 @@ class RegisterPage extends Component {
                             <input value={this.state.file} onChange={this.imgChange} type="file" name='file' />
                             <button className="btn" type='submit'> Submit</button>
                         </div>
+  
                     </form>
                 </div>
             </Wrapper>
