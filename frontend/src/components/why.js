@@ -25,31 +25,41 @@ class Why extends Component {
                     </div>
                     <div className="ycol2">
                         <div className="yrow1">
-                            <h2>TestYourself 1.0</h2>
-                            <p> <span >&#10004;</span> Slow action speeds</p>
+                            <h2>TestYourSelf 1.0</h2>
                             <p> <span >&#10004; </span>  Security issues</p>
+                            <p> <span >&#10004;</span> Slow action speed</p>
+                            <p> <span >&#10008;</span> Registration </p>
+                            <p> <span >&#10008;</span> DataBase Connection </p>
                             <p><span>&#10008;</span> Programming courses</p>
-                            <p><span>&#10008;</span>  Programmer erros</p>
-                            <p><span>&#10008;</span> Programming courses</p>
-                            <p><span>&#10008;</span>  Comprehensive ecosystem</p>
+                            <p><span>&#10008;</span>  Math Courses</p>
+                            <p><span>&#10008;</span>  Searching Informaiton</p>
+                            <p><span>&#10008;</span>  Displaying Informaiton</p>
+                            <p><span>&#10008;</span> Ranking users</p>
+
                         </div>
                         <div className="yrow2">
-                            <h2>TestYourself 2.0</h2>
-                            <p> <span >&#10004; </span>  Slow action speeds</p>
-                            <p> <span >&#10004; </span> Security issues</p>
+                            <h2>TestYourSelf 2.0</h2>
+                            <p> <span >&#10004; </span>  Security issues</p>
+                            <p> <span >&#10004;</span> Slow action fixed</p>
+                            <p> <span >&#10004;</span> Registration </p>
+                            <p> <span >&#10004;</span> DataBase Connection </p>
+                            <p><span>&#10004;</span>  Math Courses</p>
+                            <p><span>&#10004;</span>  Displaying Informaiton</p>
+                            <p><span>&#10004;</span>  Searching Informaiton</p>
                             <p><span>&#10008;</span> Programming courses</p>
-                            <p> <span >&#10004; </span> Programmer erros</p>
-                            <p><span>&#10008;</span> Programming courses</p>
-                            <p><span>&#10008;</span> Comprehensive ecosystem</p>
+                            <p><span>&#10008;</span> Ranking users</p>
                         </div>
                         <div className="yrow3">
-                            <h2>TestYourself 3.0</h2>
-                            <p> <span >&#10004;</span> Slow action speeds</p>
-                            <p> <span >&#10004;</span> courses</p>
-                            <p> <span >&#10004; </span> Security issues</p>
-                            <p> <span >&#10004; </span> Programmer erros</p>
-                            <p> <span >&#10004; </span> Programming courses</p>
-                            <p> <span >&#10004; </span> Comprehensive ecosystem</p>
+                            <h2>TestYourSelf 3.0</h2>
+                            <p> <span>&#10004; </span>  Security issues</p>
+                            <p> <span>&#10004;</span> Slow action fixed</p>
+                            <p> <span >&#10004;</span> Registration </p>
+                            <p> <span >&#10004;</span> DataBase Connection </p>
+                            <p><span>&#10004;</span> Programming courses</p>
+                            <p><span>&#10004;</span>  Math Courses</p>
+                            <p><span>&#10004;</span>  Searching Informaiton</p>
+                            <p><span>&#10004;</span>  Displaying Informaiton</p>
+                            <p><span>&#10004;</span> Ranking users</p>
                         </div>
 
                     </div>
