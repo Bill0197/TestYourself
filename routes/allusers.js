@@ -5,9 +5,7 @@ const user = require('../module/register')
 var cors = require('cors');
 
 
-//working 
 router.get("/allusers", (req, res) => {
-    // var resultUser = []
     user.find({}, function (errors, data) {
         if (errors) {
             throw errors;
@@ -16,7 +14,7 @@ router.get("/allusers", (req, res) => {
             res.json(data)
         }
     });
-    console.log("post server")
+    console.log("get server")
 });
 
 module.exports = router;

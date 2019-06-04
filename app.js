@@ -13,25 +13,11 @@ const port = process.env.PORT || 5000;
 
 //Routes
 // const UserRoute = express.Router();
-let users = require('./module/register')
+// let users = require('./module/register')
+// let maths = require('./module/math')
 const registerRoute = require("./routes/register");
 const userRoute = require('./routes/allusers')
-
-///axios
-// app.all('*/', function (req, res, next) {
-//   res.header("Access-Control-Allow-Origin", "*");
-//   res.header("Access-Control-Allow-Methods",
-//     "GET, PUT ,POST, DELETE, OPTIONS");
-//   res.header("Access-Control-Allow-Headers",
-//     "Content-type, Accept, X-Access-Token, X-key");
-//   if (req.method == "OPTIONS") {
-//     res.status(200).end();
-//   }
-//   else {
-//     next();
-//   }
-// })
-///axios
+const MathRoute = require('./routes/math')
 
 
 // Body parser middleware
@@ -45,9 +31,10 @@ mongoose.connect('mongodb://sardor:testing1@ds261616.mlab.com:61616/testinguz', 
   .then(() => console.log('database connected to MongoDB'))
 
 //Routes
-app.get("/", (req, res) => res.send("main page"));
+app.get("/", (req, res) => res.send('Backend server is working'));
 app.use("/register", registerRoute)
 app.use("/data", userRoute)
+app.use('/math', MathRoute)
 
 
 //server listener
